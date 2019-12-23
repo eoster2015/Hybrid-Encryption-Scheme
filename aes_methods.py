@@ -1,7 +1,6 @@
 import copy
-import math
-
 import gf256
+import math
 
 
 # Converts from a UTF-8 encoded string into a list of 16 byte (128 bits) blocks represented by hexadecimal strings.

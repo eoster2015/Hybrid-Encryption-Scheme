@@ -8,7 +8,7 @@ def simulator_setup():
     print("***********************************************")
     print("Welcome to the Secure Communications Simulator!")
     print("***********************************************")
-    print("Message encryption performed by a custom hybrid cryptosystem utilizing AES-256 and Blum-Goldwasser.\n")
+    print("Message encryption performed by a custom hybrid cryptosystem\nutilizing AES-256 and Blum-Goldwasser.\n")
     person1_name = input("Please enter a name for the first participant: ")
     while len(person1_name) < 1:
         print("Error: please enter at least one character.")

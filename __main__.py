@@ -14,12 +14,16 @@ def main():
             print("\nPlease enter a message to send to ", person2.name, ":", sep="")
             message = input()
             scs.message_transfer(person1, person2, message)
-            print(person2.name, " received the following message: \"", person2.message_last_received, "\"", sep="")
+            print(person2.name, " received the following ciphertext: \"",
+                  person2.message_last_received_cipher_32_bit, "\"", sep="")
+            print(person2.name, " decrypted the following message: \"", person2.message_last_received, "\"", sep="")
         elif choice[0] == "2":
             print("\nPlease enter a message to send to ", person1.name, ":", sep="")
             message = input()
             scs.message_transfer(person2, person1, message)
-            print(person1.name, " received the following message: \"", person1.message_last_received, "\"", sep="")
+            print(person1.name, " received the following ciphertext: \"",
+                  person1.message_last_received_cipher_32_bit, "\"", sep="")
+            print(person1.name, " decrypted the following message: \"", person1.message_last_received, "\"", sep="")
         elif choice[0] == "3":
             print("\nThe ciphertext last received by ", person2.name, " was \"",
                   person2.message_last_received_cipher_32_bit, "\"", sep="")
